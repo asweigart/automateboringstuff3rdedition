@@ -2,7 +2,7 @@ import re, io
 from setuptools import setup, find_packages
 
 # Load version from module (without loading the whole module)
-with open('src/automateboringstuff/__init__.py', 'r') as fo:
+with open('src/automateboringstuff3rdedition/__init__.py', 'r') as fo:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fo.read(), re.MULTILINE).group(1)
 
@@ -11,7 +11,7 @@ with io.open('README.md', encoding='utf-8') as fo:
     long_description = fo.read()
 
 setup(
-    name='automateboringstuff',
+    name='automateboringstuff3rdedition',
     version=version,
     url='https://github.com/asweigart/automateboringstuff',
     author='Al Sweigart',
